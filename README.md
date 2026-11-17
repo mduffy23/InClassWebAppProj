@@ -71,8 +71,9 @@ For each finding, record:
 
 | Tool | Finding | Real or false positive? | Severity | Fix | Policy or control it relates to |
 |---|---|---|---|---|---|
+| Hi! | This | Is An | Example of  | typing in these | cells! |
 
-Fix at least two findings, rerun the tools, and confirm the findings are gone.
+Fix at least three findings, rerun the tools, and confirm the findings are gone. Find as many as you can, you have a nice amount of time! Document you findings in the table above.
 
 Is there anything the tools missed in your view?
 
