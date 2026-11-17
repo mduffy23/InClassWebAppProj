@@ -1,0 +1,6 @@
+-r requirements.txt
+
+# Security tooling for the workshop. These are not part of the app itself.
+bandit==1.9.4
+pip-audit==2.10.1
+semgrep==1.182.1
