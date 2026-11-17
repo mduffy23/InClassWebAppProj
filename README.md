@@ -1,6 +1,6 @@
 # Lab Shop: Flask security workshop starter app
 
-Lab Shop is a small Flask app that is **intentionally insecure**. You will scan it, attack it, and fix it during the workshop. Then you will repeat the same process on your own secure web app project.
+Lab Shop is a small Flask app that is **intentionally insecure**. You will scan it, attack it, and fix it. This should be a good example for your final project.
 
 ## Rules of engagement
 
@@ -10,21 +10,23 @@ Lab Shop is a small Flask app that is **intentionally insecure**. You will scan 
 - Do not copy code from this app into real projects. It contains mistakes on purpose.
 - If a tool shows you something unexpected, stop and tell the instructor.
 
-## Setup
+## Setup - Run this in the project folder `InClassWebAppProj`
 
 You need Python 3.10 or newer. On macOS and Linux, use `python3` and `pip3` in the commands below if `python` or `pip` is not found.
 
 ```bash
 python -m venv .venv
 
-# The above command will likely activate the env, but run this just in case
+# The above command may activate the env, but if it does not (or you are not sure) run this just in case
 ## macOS / Linux
 source .venv/bin/activate
 ## Windows (PowerShell)
 .venv\Scripts\Activate.ps1
 
+# This will take a moment
 pip install -r requirements-dev.txt
 
+# This will start up the app
 python app.py
 ```
 
@@ -32,17 +34,7 @@ Open http://127.0.0.1:5000 in your browser. You should see the Lab Shop home pag
 
 To start over with fresh data, stop the app and delete the `lab.db` file.
 
-You also need [OWASP ZAP](https://www.zaproxy.org/download/) installed. Gitleaks is optional and will be shown by the instructor.
-
-Check that everything works before class:
-
-```bash
-semgrep --version
-pip-audit --version
-bandit --version
-```
-
-Semgrep can be difficult to install on native Windows. If it fails, use Bandit (it covers the same ground for this lab) or work in WSL, and tell the instructor.
+Semgrep can be difficult to install on native Windows. If it fails, use Bandit (it covers much of the same ground for this lab) or work in WSL, and tell the instructor. Wapiti or [ZAP](https://www.zaproxy.org/download/) can make up the ground as well.
 
 ## Test account
 
